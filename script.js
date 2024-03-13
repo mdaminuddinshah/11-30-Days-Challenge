@@ -2,6 +2,9 @@ const inputList = document.getElementById('input-list');
 const btns = document.getElementById('btns');
 const lists = document.getElementById('list')
 
+function emptyInput(){
+    inputList.value = ''
+}
 
 
 btns.addEventListener('click', function(){
@@ -14,4 +17,5 @@ btns.addEventListener('click', function(){
 
     createDiv.appendChild(createP)
     lists.appendChild(createDiv)
+    emptyInput()
 })
