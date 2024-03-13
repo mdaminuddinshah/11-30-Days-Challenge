@@ -9,13 +9,13 @@ function emptyInput(){
 
 btns.addEventListener('click', function(){
     let createDiv = document.createElement('div');
-    createDiv.classList.add('container', 'border', 'rounded')
+    createDiv.classList.add('container', 'border', 'rounded', 'd-flex', 'justify-content-start', 'align-items-center');
 
-    let createP = document.createElement('p')
-    createP.textContent = inputList.value
-    createP.classList.add("text-dark")
+    let createP = document.createElement('p');
+    createP.textContent = inputList.value;
+    createP.classList.add("text-dark", 'border', 'mt-3');
 
-    createDiv.appendChild(createP)
-    lists.appendChild(createDiv)
-    emptyInput()
-})
+    createDiv.appendChild(createP);
+    lists.appendChild(createDiv);
+    emptyInput();
+});
